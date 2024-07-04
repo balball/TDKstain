@@ -70,7 +70,7 @@ python -u test.py --results_dir ./results --eval --num_test [TEST NUMBER] \
 ```
 
 ## Well-trained Models
-We provide two well-trained models of our work in [`saved_checkpoints`](saved_checkpoints/). You can use these models to implement inference by running the command in [**Inference**](#inference), where you need to substitute `[EXPERIMENT NAME]` to `model1` or `model2`, and `[EPOCH]` to `latest`.
+We provide two well-trained models of our work in [`saved_checkpoints`](https://drive.google.com/drive/folders/1AlmE-zLpAxaRA4JvLgecm-1v9aEnkaPY?usp=drive_link). You can use these models to implement inference by running the command in [**Inference**](#inference), where you need to substitute `[EXPERIMENT NAME]` to `model1` or `model2`, and `[EPOCH]` to `latest`.
 
 
 ## Note
