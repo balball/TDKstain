@@ -1,6 +1,6 @@
 # [MICCAI 2024] Advancing H\&E-to-IHC Virtual Staining with Task-Specific Domain Knowledge for HER2 Scoring
 *Qiong Peng, Weiping Lin, Yihuang Hu, Ailisi Bao, Chenyu Lian, Weiwei wei, Meng Yue, Jingxin Liu, Lequan Yu, Liansheng Wang†*
-<div align=left><img width="80%" src="./overview.png"/></div>
+<div align=left><img width="95%" src="./overview.png"/></div>
 
 ## Installation
 - Clone this repo:
