@@ -1,12 +1,13 @@
 # [MICCAI 2024] Advancing H\&E-to-IHC Virtual Staining with Task-Specific Domain Knowledge for HER2 Scoring
+*Qiong Peng, Weiping Lin, Yihuang Hu, Ailisi Bao, Chenyu Lian, Weiwei wei, Meng Yue, Jingxin Liu, Lequan Yu, Liansheng Wang†*
 <div align=left><img width="100%" src="./overview.png"/></div>
 
 ## Installation
-Clone this repo:
+- Clone this repo:
 ```shell
 git clone https://github.com/balball/TDKstain && cd TDKstain
 ```
-Create a conda environment and activate it:
+- Create a conda environment and activate it:
 ```shell
 conda create -n TDKstain python==3.9.7
 conda activate TDKstain
@@ -14,7 +15,7 @@ pip install -r requirements.txt
 ```
 
 ## Data Preprocess
-We first construct the dataset in `[DATASET DIR]` as the following format:
+- We first construct the dataset in `[DATASET DIR]` as the following format:
 ```bash
 [DATASET DIR]
      ├────── train_HE
@@ -38,7 +39,9 @@ We first construct the dataset in `[DATASET DIR]` as the following format:
                             :
                 └────── test_N.png
 ```
-Then, we extract HER2 domain knowledge (DAB masks and nuclei maps) from real IHC images by [`get_dab_mask.py`](preprocess/get_dab_mask.py) and [`get_nuclei_map.py`](preprocess/get_nuclei_map.py), where you need to substitute `[DATASET DIR]` to the path of your dataset directory. Specifically, you can modulate parameters in these two files to better fit your own dataset. In this way, we can get three additional directories in `[DATASET DIR]`, including `train_IHC_dab`, `train_IHC_dab_mask` and `train_IHC_nuclei_map`.
+- Then, we extract HER2 domain knowledge (DAB masks and nuclei maps) from real IHC images by [`get_dab_mask.py`](preprocess/get_dab_mask.py) and [`get_nuclei_map.py`](preprocess/get_nuclei_map.py), where you need to substitute `[DATASET DIR]` to the path of your dataset directory. 
+- Specifically, you can modulate parameters in these two files to better fit your own dataset.
+- In this way, we can get three additional directories in `[DATASET DIR]`, including `train_IHC_dab`, `train_IHC_dab_mask` and `train_IHC_nuclei_map`.
 ```shell
 python -u ./preprocess/get_dab_mask.py
 ```
